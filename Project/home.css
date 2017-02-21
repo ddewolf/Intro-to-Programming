@@ -1,0 +1,133 @@
+/*Headers*/
+.header1,
+.header2, 
+.header3, 
+.header4 {
+  font-family: monospace;
+  font-weight: 800;
+  background-color: #7C8B88;
+  color: navy;
+}
+
+.header1 {
+  font-size: 40px;
+}
+
+.header2 {
+  font-size: 30px;
+  /*margin-bottom: -10px;*/
+}
+
+.header3 {
+  font-size: 30px;
+}
+
+.header4 {
+  font-size: 25px;
+}
+
+/*Content*/
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 90%;
+  background-color: navy;
+  color: white;
+}
+
+div {
+  /*outline: 2px solid red;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+span {
+  /*outline: 2px solid blue;*/
+}
+
+ul {
+  /*display: inline;*/
+  list-style-type: square; 
+}
+
+li {
+  font-weight: bolder;
+}
+
+a:link {
+  color: springgreen;
+}
+
+a:visited {
+  color: gray;
+}
+
+.code-example {
+  color: black;
+  background-color: #9999ff;
+  font-size: 15px;
+}
+
+#toc {
+  width: 200px;
+  margin-top: -20px;
+  /*margin: 0 auto;*/
+}
+
+#intro {
+  padding-left: 5px;
+  padding-top: 5px;
+  display: flex;
+}
+
+.rpic {
+  padding-left: 20px;
+  width: 90%;
+}
+
+.largetext {
+  font-size: 25px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.hdivs {
+  display: -webkit-flex;
+  display: flex;
+}
+
+#davidimg {
+  /*vertical-align: text-bottom;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  /*float: right;*/
+  height: 380px;
+  width: 460px;
+}
+
+#brtag {
+  background-image: url(images/garbage.jpg);
+  background-size: contain;
+  color: white;
+}
+
+.whiteoutline {
+  outline: 2px solid white;
+}
+
+.redoutline {
+  outline: 2px solid red;
+}
+
+.box {
+  /*webkit, moz, ms*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 700px;
+}
