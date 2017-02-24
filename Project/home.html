@@ -2,243 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> HTML Notes </title>
-  <link rel="stylesheet" href="home.css">
+  <title>Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header1">
-	<h1>HTML Notes</h1>
-  </div>
 
-  <div id="intro">
-    <div>
-      <img src ="images/dewolf.jpg" alt ="Dave Headshot" id="headshot">
-    </div>
-    <div class="rpic">
-          Hi. My name is Dave.  I am just starting to learn how to code in HTML.  This is my website, which I am using 
-          to document everything that I am learning.  
-        <p>
-          HTML stands for hypertext markup language, and provides the structure for web pages.<em>When coding, you don't 
-          have to remember everything!!  If you don't know the answer,<b><a href= "http://www.google.com"> GOOGLE</a></b></em> it!
-        </p>
-    </div>
-  </div> <!--closing intro-->
+  <ul class="navbar">
+    <li class="title">Learn HTML</li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="tags.html">Tags</a></li>
+    <li><a href="dom.html">DOM</a></li>
+    <li><a href="styling.html">Styling a Webpage</a></li>
+    <li><a href="resources.html">Developer Resources</a></li>
+    <li><a href="boxes.html">Boxes</a></li>
+  </ul>
 
-    
   <div class="content">
-      
-      <div id="tags">
-      	<div class="header3">
-	    	<h3>HTML Tags and How They Work</h3>
-	    </div>
-	    <div class="hdivs">
-	      <div id="toc">
-	        <ul>
-	            <li><a href="#ptag">P Tags</a></li>
-	            <li><a href="#strongtag">Strong Tags</a></li>
-	            <li><a href="#formtag">Form Tags</a></li>
-	            <li><a href="#brtag">br Tags</a></li>
-	            <li><a href="#spantag">Span Tags</a></li>
-	            <li><a href="#divtag">Div Tags</a></li>
-	            <li><a href="#imgtag">Img Tags</a></li>
-	        </ul>
-	      </div>
-	      <div class="rpic">
-	          An HTML tag is a piece of HTML code that instructs the content within the tag to do something.
-	          An element is some kind of content enclosed within an opening tag and a closing tag. Below
-	          you will see the demonstration of multiple tags, and how they appear on the web browser
-	      </div>
-	  	</div> <!--closing hdivs-->
-	  </div> <!--closing tags-->
-
-      <div id="ptag">
-      	<div class=header4>
-        	<h4>P Tags</h4>
-        </div>
-        <p>
-          This demonstrates text within the first p tag
-        </p>
-        <p>
-          This demonstrates text within a 2nd p tag.  Notice that the text within this p tag begins a 2nd paragraph
-        </p>
-      </div>
-
-      <div id="strongtag">
-      	<div class=header4>
-        	<h4>Strong Tags</h4>
-        </div>
-          <strong>
-            This text is inside a strong tag.  It is basically the same thing as a b tag. Notice that this bold text
-            is on a separate line because it is outside of the 2nd p tag, and therefore, not part of the paragraph above.
-          </strong>
-      </div>
-
-      <div id="formtag">
-     	<div class=header4>
-        	<h4>Form Tags</h4>
-        </div>
-          <form>
-            This <em> text </em> is inside a form tag.
-          </form>
-          This text is outside the form tag. You can see that the form tag is <em>"block"</em> because it caused the text
-          outside of it to start a new line.
-      </div>
-
-      <div id="brtag">
-      	<div class=header4>
-        	<h4>br Tags</h4>
-        </div>
-        <br>
-        A br tag causes the text to start a new line, like this one.
-        <br>
-      </div>
-
-      <div id="spantag">
-      	<div class=header4>
-        	<h4>Span Tags</h4>
-        </div>
-          <span class="whiteoutline">
-            This text is inside of a span tag.
-          </span>
-          This text is outside the span tag. You can see that the span tag is <em>"inline"</em> because it did not cause
-          the text outside of it to start a new line.
-      </div>
-
-      <div id="divtag">
-      	<div class=header4>
-        	<h4>Div Tags</h4>
-        </div>
-          <div class="redoutline">
-            This text is inside of a div tag.
-          </div>
-          This text is outside of a div tag.  You can see that a div tag is <em>"block"</em> becuase it caused the text
-          outside of it to start a new line.
-      </div>
-
-      <div id="imgtag">
-      	<div class=header4>
-        	<h4>Img Tags</h4>
-        </div>
-        <div class="hdivs">
-        	<div>
-          		<img src = "images/david_chalk.jpg" alt = "David playing with sidewalk chalk" id="davidimg">
-          	</div>
-          	<div class="rpic">
-	            Image tags allow you to display an image via providing a link or a hard drive location.
-	            This is my son, David, when he was a year old, playing with sidewalk chalk.  David has always enjoyed art.
-	            David has a little brother, named Camden, who is not in the picture.
-          	</div>
-        </div>
-      </div>
-
-      <div class="header4">
-        <h4>Styling your Webpage</h4>
-      </div>
+    <div id="intro">
       <div>
-          After content, like pictures and text, are added to your HTML file, you'll probably want to "style" your page.  
-          Styling refers to making your content appear exactly how you want it to appear.  Simple examples would be bolding, or 
-          underlining text, setting background colors, positioning content exactly where you want it, etc. 
-          There are several different ways to do this. 
+        <img src ="images/dewolf.jpg" alt ="Dave Headshot" id="headshot">
       </div>
-      <div>
-        <ul>
-          <li class="largetext">Styling within HTML</li>
-            <div>
-              This can be done by writing the style directly into each element within the HTML file.  For example:
-              <div class="code-example">
-                <xmp> 
-                  <div style="background-color: blue, color: white"> 
-                    This will be white text with a blue background 
-                  </div> 
-                </xmp>
-              </div>
-            </div>
-        </ul>
+      <div class="rpic">
+        <p class="extraspace">Hi. My name is Dave.  I am just starting to learn how to code in HTML.  This is my website, which I am using 
+        to document everything that I am learning. </p> 
+        <p> HTML stands for hypertext markup language, and provides the structure for web pages.<em>When coding, you don't 
+        have to remember everything!!  If you don't know the answer,<b><a href= "http://www.google.com"> GOOGLE</a></b></em> it!</p>
+      </div>
+    </div> <!--closing intro-->
 
+
+      <div id="www">
+        <div class="header3">
+          <h3>Components of the Web</h3>
+        </div>
         <div>
-            CSS, or cascading style sheets, uses references, in which you define, to "cascade" onto the elements that you want.  
-            Therefore, if there is a certain "style" of text you want to use for all the headers on your page, you only have
-            to define this "style" one time, then apply it to all headers on the page.  These "definitions" can be made in the
-            HEAD section of your HTML document, or you can store them in a separate .css file.  
+          The diagram below depicts the basic components of the World Wide Web.  In order to access the internet, you run a browser on your PC.
+          A browser is a program used to access and display files hosted on the internet.  Examples are Google Chrome and Internet Explorer.  The internet,
+          depicted by the cloud, is nothing but a giant network of computers.  Internet files stored on these computers are retrieved via the HTTP
+          protocol, and can then be viewed on your PC browser.  
         </div>
-
-        <ul>
-          <li class="largetext">CSS styling in the head of your HTML doc</li>
-            <div>
-              CSS can be written directly into your HTML file in the HEAD section, and this will cascade down to wherever those styles
-              are called out on the page.  For example:
-              <div class="code-example">
-                <xmp> 
-                <head>
-                  <style>
-                    div {
-                      background-color: blue;
-                    }
-                  </style>
-                </head>
-                <body>
-                  <div>
-                    This text will have a blue background
-                  </div>
-                </body>
-                </xmp>
-              </div>
-            </div>
-
-          <li class="largetext">Linking your HTML file to a separate CSS file</li>
-            <div>
-              Alternatively, CSS can be written on a separate "style sheet" and then linked to the HTML document.  This is the preferred
-              method for larger projects.  CSS has its own format to be used, in which the "style" of element classes are defined.  For 
-              example:
-              <div class="code-example">
-                <xmp>
-                    .header1,
-                    .header2, 
-                    .header3, 
-                    .header4 {
-                      font-weight: bolder;
-                      background-color: gray;
-                      color: navy;
-                    }                            
-                </xmp>
-              </div>
-                The above statement is defining the font and background color for headers 1, 2, 3, and 4.  For example, anytime an element is 
-                listed with a class="header1", the text in that element will bear what was defined above. 
-              <div class="code-example"> 
-                <xmp>
-                  <div class="header1">
-                    This text will be a bold, navy color, with a gray background.
-                  </div>
-                </xmp>
-              </div>
-            </div>
-        </ul>
-      </div>
-
-      <div class="header4">
-        <h4>Developer Resources</h4>
-      </div>
-      <div>
-        There are an infinite number of resources available for web developers.  However, I want to share a few that will be a huge help.
-      </div>
-      <div>
-        <ul>
-          <div>
-          <li class="largetext">Google Chrome Developer Tools</li>
-            Within the Google Chrome dropdown menu, navigate to More tools > Developer tools.  You should be able to see both the HTML and 
-            the CSS (Styles). Here, you can edit code on the fly, and view the changes to the website in real time.  This is very useful
-            when trying to figure out how a certain design will look.  You can literally make the change, on the fly in Google Chrome, and 
-            then go back and add the change to your HTML and CSS files.   
-          </div>
-          <p>
-          <div>
-          <li class="largetext">HTML element reference</li>
-            This <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">website</a> provides a reference for 
-            all HTML elements so that you can quickly find out how to add any content to your page.
-          </div>
-          </p>
-             
-
+        <div class="center">
+          <img src="images/world-wide-web.jpg" alt="World Wide Web Diagram">
+        </div>
+      </div> <!--Closing www-->
+          
   </div> <!--close content-->
 </body>
 </html>

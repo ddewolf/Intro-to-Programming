@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<ul class="navbar">
+	    <li class="title">DOM</li>
+	    <li><a href="home.html">Home</a></li>
+	    <li><a href="tags.html">Tags</a></li>
+	    <li><a href="dom.html">DOM</a></li>
+	    <li><a href="styling.html">Styling a Webpage</a></li>
+	    <li><a href="resources.html">Developer Resources</a></li>
+	    <li><a href="boxes.html">Boxes</a></li>
+	 </ul>
+
+	<div class="content">
+		<div class="extraspace" id="dom">
+		<div>
+          DOM stands for Document Object Model, and it refers to the way in which your HTML code should be structured.  
+          HTML code is a series of elements within elements, within elements.  For example, you can see in the snippet
+          below how the &lt;title> tag is a subtag within the &lt;head> tag.  Furthermore, notice how the &lt;img> tag is inside a 
+          &lt;div> tag, which is inside the &lt;body> tag.  Notice how anything within the opening
+          and closing tags are indented.  This is done to make the code easier to read.  If it were not indented, and 
+          everything was inline, it would make it very difficult to tell which elements are inside other elements.  This 
+          is an example of the "tree-like," or DOM structure.
+        </div>
+        <div>
+            <pre>
+              <code>
+                &lt;!DOCTYPE HTML>
+                &lt;html>
+                &lt;head>
+                  &lt;title>My Webpage&lt;/title>
+                &lt;/head>
+                &lt;body>
+                  &lt;div>
+                    This is the body of my website
+                  &lt;/div>
+                  &lt;div>
+                    &lt;img src= "url" alt="My Pic">
+                  &lt;/div>
+                &lt;/body>
+                &lt;/html>
+              </code>
+            </pre>
+        </div>
+      	</div> <!--Closing dom-->
+	</div> <!--closing content-->
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<ul class="navbar">
+	    <li class="title">Styling</li>
+	    <li><a href="home.html">Home</a></li>
+	    <li><a href="tags.html">Tags</a></li>
+	    <li><a href="dom.html">DOM</a></li>
+	    <li><a href="styling.html">Styling a Webpage</a></li>
+	    <li><a href="resources.html">Developer Resources</a></li>
+	    <li><a href="boxes.html">Boxes</a></li>
+	 </ul>
+
+	<div class="content">
+		<div class="extraspace" id="styling">
+        <p class="less-space">After content, like pictures and text, are added to your HTML file, you'll probably want to "style" your page.  
+        Styling refers to making your content appear exactly how you want it to appear.  Simple examples would be bolding, or 
+        underlining text, setting background colors, positioning content exactly where you want it, etc. 
+        There are several different ways to do this.</p>
+        
+          <h4 class="extraspace">1. Styling within HTML</h4>
+            <p class="less-space">This can be done by writing the style directly into each element within the HTML file.  For example:</p>
+            <pre>
+              <code> 
+                &lt;div style="background-color: blue, color: white"> 
+                  This will be white text with a blue background 
+                &lt;/div> 
+              </code>
+            </pre>
+            <p>CSS, or cascading style sheets, uses references, in which you define, to "cascade" onto the elements that you want.  
+            Therefore, if there is a certain "style" of text you want to use for all the headers on your page, you only have
+            to define this "style" one time, then apply it to all headers on the page.  These "definitions" can be made in the
+            HEAD section of your HTML document, or you can store them in a separate .css file.</p> 
+
+          <h4 class="extraspace">2. CSS styling in the head of your HTML doc</h4>
+            <p class="less-space">CSS can be written directly into your HTML file in the HEAD section, and this will cascade down to wherever those styles
+            are called out on the page.  For example:</p>
+            <pre>
+              <code> 
+              &lt;head>
+                &lt;style>
+                  div {
+                    background-color: blue;
+                  }
+                &lt;/style>
+              &lt;/head>
+              &lt;body>
+                &lt;div>
+                  This text will have a blue background
+                &lt;/div>
+              &lt;/body>
+              </code>
+            </pre>
+
+            <h4 class="extraspace">3. Linking your HTML file to a separate CSS file</h4>
+              <p class="less-space">Alternatively, CSS can be written on a separate "style sheet" and then linked to the HTML document.  This is the preferred
+                method for larger projects.  CSS has its own format to be used, in which the "style" of element classes are defined.  For 
+                example:</p>
+                <pre>
+                  <code>
+                      .header1,
+                      .header2, 
+                      .header3, 
+                      .header4 {
+                        font-weight: bolder;
+                        background-color: gray;
+                        color: navy;
+                      }                            
+                  </code>
+                </pre>
+                <p>The above statement is defining the font and background color for headers 1, 2, 3, and 4.  For example, anytime an element is 
+                listed with a class="header1", the text in that element will bear what was defined above.</p>
+                <pre> 
+                  <code>
+                    &lt;div class="header1">
+                      This text will be a bold, navy color, with a gray background.
+                    &lt;/div>
+                  </code>
+                </pre>
+      	</div> <!--Closing styling-->
+    </div> <!--closing content-->
+</body>
+</html>
