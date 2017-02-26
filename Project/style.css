@@ -38,7 +38,6 @@ ul.navbar li a:hover {
   background-color: #a6a6a6;
 }
 
-
 /*Headers*/
 
 .header1,
@@ -51,25 +50,15 @@ ul.navbar li a:hover {
   color: navy;
 }
 
-.header1 {
-  font-size: 40px;
-  margin-top: -50px;
+h1.header1 {
+  font-size: 30px;
   width: 100%;
 }
 
-.header2 {
-  font-size: 30px;
-  /*margin-bottom: -10px;*/
-}
-
-.header3 {
-  font-size: 30px;
-  margin-top: -30px;
-}
-
-.header4 {
+h2.header2 {
   font-size: 25px;
 }
+
 
 /*Content*/
 
@@ -180,7 +169,7 @@ pre {
 }
 
 .extraspace {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .less-space {
