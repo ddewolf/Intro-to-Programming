@@ -14,19 +14,20 @@ ul.navbar li {
 
 ul.navbar li.title {
   font-family: monospace;
-  display: inline-block;
+  display: block;
   color:  #dcdcef;
+  text-shadow: 1px 1px 2px black; 
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 0.4s;
   font-size: 35px;
 }
 
 ul.navbar li a {
   font-family: monospace;
-  display: inline-block;
+  display: block;
   color:  #dcdcef;
+  text-shadow: 1px 1px 2px black; 
   text-align: center;
   padding: 25px 16px;
   text-decoration: none;
@@ -35,8 +36,59 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
+  background-color: cornflowerblue;
+}
+
+ul.navbar li.currpage {
   background-color: #a6a6a6;
 }
+
+ul.navbar li.currpage a {
+  text-shadow: none;
+  color: black;
+}
+
+
+/*Dropdown Navigation Bar*/
+
+ul li ul.subnav {
+  list-style-type: none;
+  width: inherit; 
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 10px 5px 5px black;
+}
+
+ul li ul.subnav li {
+  display: block;
+  float: none;
+  padding: 0
+  margin: 0;
+}
+
+ul li ul.subnav li a {
+  padding: 2px 10px 2px 10px;
+  margin: 0;
+  text-align: left;
+  color: black;
+  text-shadow: none;
+  transition: 0.0s;
+}
+
+ul li:hover ul.subnav {
+  visibility: visible;
+}
+
+ul li ul.subnav li a:hover {
+  color: deeppink;
+  text-decoration: underline;
+  background-color: white;
+}
+
+
 
 /*Headers*/
 
@@ -50,15 +102,25 @@ ul.navbar li a:hover {
   color: navy;
 }
 
-h1.header1 {
-  font-size: 30px;
+.header1 {
+  font-size: 40px;
+  margin-top: -50px;
   width: 100%;
 }
 
-h2.header2 {
-  font-size: 25px;
+.header2 {
+  font-size: 30px;
+  /*margin-bottom: -10px;*/
 }
 
+.header3 {
+  font-size: 30px;
+  margin-top: -30px;
+}
+
+.header4 {
+  font-size: 25px;
+}
 
 /*Content*/
 
@@ -169,7 +231,7 @@ pre {
 }
 
 .extraspace {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .less-space {

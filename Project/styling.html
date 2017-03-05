@@ -7,17 +7,26 @@
 </head>
 <body>
 
-  <div>
-  	<ul class="navbar">
-  	    <li class="title">Styling</li>
-  	    <li><a href="home.html">Home</a></li>
-  	    <li><a href="tags.html">Tags</a></li>
-  	    <li><a href="dom.html">DOM</a></li>
-  	    <li><a href="styling.html">Styling a Webpage</a></li>
-  	    <li><a href="resources.html">Developer Resources</a></li>
-  	    <li><a href="boxes.html">Boxes</a></li>
-  	 </ul>
-  </div>
+	<ul class="navbar">
+	    <li class="title">Styling</li>
+	    <li><a href="home.html">Home</a></li>
+	    <li>
+        <a href="tags.html">Tags</a>
+          <ul class="subnav">
+            <li><a href="tags.html#ptag">P Tags</a></li>
+            <li><a href="tags.html#strongtag">Strong Tags</a></li>
+            <li><a href="tags.html#formtag">Form Tags</a></li>
+            <li><a href="tags.html#brtag">br Tags</a></li>
+            <li><a href="tags.html#spantag">Span Tags</a></li>
+            <li><a href="tags.html#divtag">Div Tags</a></li>
+            <li><a href="tags.html#imgtag">Img Tags</a></li>
+          </ul>
+      </li>
+	    <li><a href="dom.html">DOM</a></li>
+	    <li class="currpage"><a href="styling.html">Styling a Webpage</a></li>
+	    <li><a href="resources.html">Developer Resources</a></li>
+	    <li><a href="boxes.html">Boxes</a></li>
+	 </ul>
 
 	<div class="content">
 		<div class="extraspace" id="styling">
@@ -26,7 +35,7 @@
         underlining text, setting background colors, positioning content exactly where you want it, etc. 
         There are several different ways to do this.</p>
         
-          <h2 class="extraspace">1. Styling within HTML</h2>
+          <h4 class="extraspace">1. Styling within HTML</h4>
             <p class="less-space">This can be done by writing the style directly into each element within the HTML file.  For example:</p>
             <pre>
               <code> 
@@ -40,7 +49,7 @@
             to define this "style" one time, then apply it to all headers on the page.  These "definitions" can be made in the
             HEAD section of your HTML document, or you can store them in a separate .css file.</p> 
 
-          <h2 class="extraspace">2. CSS styling in the head of your HTML doc</h2>
+          <h4 class="extraspace">2. CSS styling in the head of your HTML doc</h4>
             <p class="less-space">CSS can be written directly into your HTML file in the HEAD section, and this will cascade down to wherever those styles
             are called out on the page.  For example:</p>
             <pre>
@@ -60,7 +69,7 @@
               </code>
             </pre>
 
-            <h2 class="extraspace">3. Linking your HTML file to a separate CSS file</h2>
+            <h4 class="extraspace">3. Linking your HTML file to a separate CSS file</h4>
               <p class="less-space">Alternatively, CSS can be written on a separate "style sheet" and then linked to the HTML document.  This is the preferred
                 method for larger projects.  CSS has its own format to be used, in which the "style" of element classes are defined.  For 
                 example:</p>

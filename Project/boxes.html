@@ -7,25 +7,34 @@
 </head>
 <body>
 
-	<div>
-		<ul class="navbar">
-		    <li class="title">Boxes</li>
-		    <li><a href="home.html">Home</a></li>
-		    <li><a href="tags.html">Tags</a></li>
-		    <li><a href="dom.html">DOM</a></li>
-		    <li><a href="styling.html">Styling a Webpage</a></li>
-		    <li><a href="resources.html">Developer Resources</a></li>
-		    <li><a href="boxes.html">Boxes</a></li>
-		 </ul>
-	 </div>
+	<ul class="navbar">
+	    <li class="title">Boxes</li>
+	    <li><a href="home.html">Home</a></li>
+	    <li>
+        <a href="tags.html">Tags</a>
+          <ul class="subnav">
+            <li><a href="tags.html#ptag">P Tags</a></li>
+            <li><a href="tags.html#strongtag">Strong Tags</a></li>
+            <li><a href="tags.html#formtag">Form Tags</a></li>
+            <li><a href="tags.html#brtag">br Tags</a></li>
+            <li><a href="tags.html#spantag">Span Tags</a></li>
+            <li><a href="tags.html#divtag">Div Tags</a></li>
+            <li><a href="tags.html#imgtag">Img Tags</a></li>
+          </ul>
+      	</li>
+	    <li><a href="dom.html">DOM</a></li>
+	    <li><a href="styling.html">Styling a Webpage</a></li>
+	    <li><a href="resources.html">Developer Resources</a></li>
+	    <li class="currpage"><a href="boxes.html">Boxes</a></li>
+	 </ul>
 
 	<div class="content">
 		<div class="extraspace" id="boxes">
 	        <p>Boxes is a concept that is very widely used when building webpages.  If you look at a webpage as building blocks on top of one another,
 	        that is literally how it is built.  Take for instance this mock web page:</p>
 	        <div class="sample-page">
-	            <div>
-	              <h2 class="sample-header">My Webpage</h2>
+	            <div class="sample-header">
+	              <h4>My Webpage</h4>
 	            </div>
 	            <div class="hdivs">
 	              <div class="redoutline">
