@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<ul class="navbar">
+	    <li class="title">Boxes</li>
+	    <li><a href="home.html">Home</a></li>
+	    <li>
+        <a href="tags.html">Tags</a>
+          <ul class="subnav">
+            <li><a href="tags.html#ptag">P Tags</a></li>
+            <li><a href="tags.html#strongtag">Strong Tags</a></li>
+            <li><a href="tags.html#formtag">Form Tags</a></li>
+            <li><a href="tags.html#brtag">br Tags</a></li>
+            <li><a href="tags.html#spantag">Span Tags</a></li>
+            <li><a href="tags.html#divtag">Div Tags</a></li>
+            <li><a href="tags.html#imgtag">Img Tags</a></li>
+          </ul>
+      	</li>
+	    <li><a href="dom.html">DOM</a></li>
+	    <li><a href="styling.html">Styling a Webpage</a></li>
+	    <li><a href="resources.html">Developer Resources</a></li>
+	    <li class="currpage"><a href="boxes.html">Boxes</a></li>
+	 </ul>
+
+	<div class="content">
+		<div class="extraspace" id="boxes">
+	        <p>Boxes is a concept that is very widely used when building webpages.  If you look at a webpage as building blocks on top of one another,
+	        that is literally how it is built.  Take for instance this mock web page:</p>
+	        <div class="sample-page">
+	            <div class="sample-header">
+	              <h4>My Webpage</h4>
+	            </div>
+	            <div class="hdivs">
+	              <div class="redoutline">
+	                <img src="images/oak-tree.jpg" alt="Giant Oak Tree" class="oak-tree">
+	              </div>
+	              <div class="sample-text">
+	                  You can see that that I have included a red outline around all of the "boxes" that I am referring to on this sample page.  There is
+	                  one large box around the entire page, one smaller box around the picture and text, and then smaller boxes around every sub-element: header, picture, text, and footer.  These boxes are created by using "block" type elements within your HTML coding.  In this example, 
+	                  I have used DIV tags in order to create the boxes you see highlighted here.
+	                <p>
+	                  Its also important to note, that unless specified, the boxes will build one, on top of another, in the same order that the elements
+	                  appear in the HTML code.  If you want your boxes to appear next to each other, you have to use a css property called "display: flex;"
+	                  Here, I have defined the single box around the picture and text as "display: flex;"  That is why the text appears to the right of the 
+	                  oak tree, instead of underneath it.
+	                </p>
+	              </div>
+	            </div>
+	            <div class="sample-header">
+	              Webpage footer
+	            </div>
+	        </div> <!--Closing sample-page-->
+          	<p class="extraspace">Once you have your content contained into boxes, and you have the boxes laid out the way you want, then you can customize within
+	        the boxes by moving content around within the box, resizing, setting borders, max heights and widths, etc.  All of this 
+	        "customizing" can be done using CSS.  Chances are, a CSS property exists for anything you are trying to do.  So, as long as you
+	        know how you want the design to look, all you have to do is look up the CSS property, and apply it!</p>
+      	</div> <!--Closing boxes-->
+  	</div> <!--closing content-->
+</body>
+</html>

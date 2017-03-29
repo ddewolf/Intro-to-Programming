@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<ul class="navbar">
+	    <li class="title">HTML Tags</li>
+	    <li><a href="home.html">Home</a></li>
+	    <li class="currpage">
+        	<a href="tags.html">Tags</a>
+          		<ul class="subnav">
+		            <li><a href="tags.html#ptag">P Tags</a></li>
+		            <li><a href="tags.html#strongtag">Strong Tags</a></li>
+		            <li><a href="tags.html#formtag">Form Tags</a></li>
+		            <li><a href="tags.html#brtag">br Tags</a></li>
+		            <li><a href="tags.html#spantag">Span Tags</a></li>
+		            <li><a href="tags.html#divtag">Div Tags</a></li>
+		            <li><a href="tags.html#imgtag">Img Tags</a></li>
+          		</ul>
+      	</li>
+	    <li><a href="dom.html">DOM</a></li>
+	    <li><a href="styling.html">Styling a Webpage</a></li>
+	    <li><a href="resources.html">Developer Resources</a></li>
+	    <li><a href="boxes.html">Boxes</a></li>
+	 </ul>
+
+	<div class="content">
+		<div class="extraspace" id="tags">
+			<!--Commenting out table of contents
+	  	    <div class="hdivs">
+	  	      <div class="llist">
+	  	        <ul>
+	  	            <li><a href="#ptag">P Tags</a></li>
+	  	            <li><a href="#strongtag">Strong Tags</a></li>
+	  	            <li><a href="#formtag">Form Tags</a></li>
+	  	            <li><a href="#brtag">br Tags</a></li>
+	  	            <li><a href="#spantag">Span Tags</a></li>
+	  	            <li><a href="#divtag">Div Tags</a></li>
+	  	            <li><a href="#imgtag">Img Tags</a></li>
+	  	        </ul>
+	  	      </div>
+	  	      <div class="rpic"> 
+	  	    -->
+	          An HTML tag is a piece of HTML code that instructs the content within the tag to do something.
+	          An element is some kind of content enclosed within an opening tag and a closing tag. Below
+	          you will see the demonstration of multiple tags, and how they appear on the web browser
+	  	    <!-- Commenting out closing divs that belong to the divs that were commented out above
+	  	      </div>
+		  	</div> 
+		  	-->
+
+	        <div id="ptag">
+	        	<div class=header4>
+	          	<h4>&lt;p> Tags</h4>
+	          </div>
+	          <p>
+	            This demonstrates text within the first p tag
+	          </p>
+	          <p>
+	            This demonstrates text within a 2nd p tag.  Notice that the text within this p tag begins a 2nd paragraph
+	          </p>
+	        </div>
+
+	        <div id="strongtag">
+	        	<div class=header4>
+	          	<h4>&lt;strong> Tags</h4>
+	          </div>
+	            <strong>
+	              This text is inside a strong tag.  It is basically the same thing as a b tag. Notice that this bold text
+	              is on a separate line because it is outside of the 2nd p tag, and therefore, not part of the paragraph above.
+	            </strong>
+	        </div>
+
+	        <div id="formtag">
+	       	  <div class=header4>
+	          	<h4>&lt;form> Tags</h4>
+	          </div>
+	            <form>
+	              This <em> text </em> is inside a form tag.
+	            </form>
+	            This text is outside the form tag. You can see that the form tag is <em>"block"</em> because it caused the text
+	            outside of it to start a new line.
+	        </div>
+
+	        <div id="brtag">
+	        	<div class=header4>
+	          	<h4>&lt;br> Tags</h4>
+	          </div>
+	          This is a line of text.
+	          <br>
+	          A br tag causes the text to start a new line, like this one.
+	        </div>
+
+	        <div id="spantag">
+	        	<div class=header4>
+	          	<h4>&lt;span> Tags</h4>
+	          </div>
+	            <span class="whiteoutline">
+	              This text is inside of a span tag.
+	            </span>
+	            This text is outside the span tag. You can see that the span tag is <em>"inline"</em> because it did not cause
+	            the text outside of it to start a new line.
+	        </div>
+
+	        <div id="divtag">
+	        	<div class=header4>
+	          	<h4>&lt;div> Tags</h4>
+	          </div>
+	            <div class="redoutline">
+	              This text is inside of a div tag.
+	            </div>
+	            This text is outside of a div tag.  You can see that a div tag is <em>"block"</em> becuase it caused the text
+	            outside of it to start a new line.
+	        </div>
+
+	        <div id="imgtag">
+	        	<div class=header4>
+	          	<h4>&lt;img> Tags</h4>
+	          </div>
+	          <div class="hdivs">
+	          	<div>
+	          		<img src = "images/david_chalk.jpg" alt = "David playing with sidewalk chalk" id="davidimg">
+	          	</div>
+	          	<div class="rpic">
+	              Image tags allow you to display an image via providing a link or a hard drive location.
+	              This is my son, David, when he was a year old, playing with sidewalk chalk.  David has always enjoyed art.
+	              David has a little brother, named Camden, who is not in the picture.
+	          	</div>
+	          </div>
+	        </div>
+	    </div> <!--closing tags-->
+	</div> <!--closing content-->
+</body>
+</html>
